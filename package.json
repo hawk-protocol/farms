@@ -1,0 +1,43 @@
+{
+  "name": "hawk-farm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "deploy": "hardhat deploy --tags master",
+    "deploy:local": "hardhat deploy --network localhost --tags master",
+    "deploy:mumbai": "hardhat deploy --network mumbai  --tags master",
+    "deploy:faucet": "hardhat deploy --tags faucet",
+    "export": "hardhat export --export deployments/localhost_addresses.json",
+    "test": "hardhat test",
+    "coverage": "hardhat coverage"
+  },
+  "dependencies": {
+    "@hawk-protocol/swap-lib": "^0.0.1",
+    "@hawk-protocol/hawk-swap-core": "^1.0.1",
+    "@nomiclabs/hardhat-etherscan": "^3.0.3",
+    "@openzeppelin/test-helpers": "^0.5.6"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers",
+    "@nomiclabs/hardhat-truffle5": "^2.0.0",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@nomiclabs/hardhat-web3": "^2.0.0",
+    "@types/chai": "^4.2.6",
+    "@types/mocha": "^5.2.7",
+    "chai": "^4.2.0",
+    "dotenv": "^8.2.0",
+    "ethereum-waffle": "^2.4.1",
+    "ethereumjs-util": "^6.2.0",
+    "ethers": "^5.0.14",
+    "hardhat": "^2.2.1",
+    "hardhat-deploy": "^0.7.5",
+    "hardhat-local-networks-config-plugin": "^0.0.5",
+    "solidity-coverage": "^0.7.13",
+    "truffle-hdwallet-provider": "^1.0.17",
+    "truffle-plugin-verify": "^0.4.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4",
+    "web3": "^1.3.5"
+  }
+}
